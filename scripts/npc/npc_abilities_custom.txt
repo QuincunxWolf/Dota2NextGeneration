@@ -235,7 +235,7 @@
 			"05"		
 			{		
 				"var_type"						"FIELD_FLOAT"
-				"debuff_value"					"35"
+				"debuff_value"					"-35"
 			}		
 			"06"		
 			{		
@@ -251,6 +251,100 @@
 			{		
 				"var_type"						"FIELD_FLOAT"
 				"charge_cooldown"				"110 80 50"
+			}
+		}
+	}
+	//================================================================================================
+	// 
+	//================================================================================================	
+	"keen_commander_recon_systems"
+	{
+		"ScriptFile"					"heroes/hero_keen_commander/keen_commander_recon_systems"
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"hero_keen_commander/keen_commander_recon_systems"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_UNIT_TARGET"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_TREE | DOTA_UNIT_TARGET_CUSTOM"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_CUSTOM"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_MAGICAL"
+
+		"AbilityCooldown"				"24 20 15 12"
+		"AbilityManaCost"				"100 110 120 130"
+
+		"AbilityCastRange"				"160"
+		"AbilityCastPoint"				"0.3"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{		
+				"var_type"						"FIELD_FLOAT"
+				"shock_range"					"300"
+			}
+			"02"
+			{		
+				"var_type"						"FIELD_FLOAT"
+				"shock_bot_duration"			"180"
+			}
+			"03"
+			{		
+				"var_type"						"FIELD_FLOAT"
+				"shock_damage"					"20 40 60 80"
+			}
+			"04"
+			{		
+				"var_type"						"FIELD_FLOAT"
+				"movespeed_slow_percentage"		"30"
+			}
+			"05"
+			{		
+				"var_type"						"FIELD_FLOAT"
+				"slow_duration"					"0.2 0.3 0.4 0.5"
+			}
+			"06"
+			{		
+				"var_type"						"FIELD_FLOAT"
+				"shock_null_duration"			"8.0"
+			}
+		}
+	}
+
+	"keen_commander_mortar_shot"
+	{
+		"ScriptFile"					"heroes/hero_keen_commander/keen_commander_mortar_shot"
+		"BaseClass"             		"ability_lua"
+		"AbilityTextureName"			"hero_keen_commander/keen_commander_mortar_shot"
+		"AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_POINT | DOTA_ABILITY_BEHAVIOR_AOE"
+		"AbilityUnitTargetTeam"			"DOTA_UNIT_TARGET_TEAM_ENEMY"
+		"AbilityUnitTargetType"			"DOTA_UNIT_TARGET_HERO | DOTA_UNIT_TARGET_BASIC"
+		"AbilityUnitDamageType"			"DAMAGE_TYPE_PHYSICAL"
+
+		"AbilityCooldown"				"34 28 22 16"
+		"AbilityManaCost"				"90"
+
+		"AbilityCastRange"				"1000"
+		"AbilityCastPoint"				"0.4"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{		
+				"var_type"						"FIELD_FLOAT"
+				"field_radius"					"200"
+			}
+			"02"
+			{		
+				"var_type"						"FIELD_FLOAT"
+				"blaze_duration"				"18 20 22 24"
+			}
+			"03"
+			{		
+				"var_type"						"FIELD_FLOAT"
+				"damage_per_second"				"15 20 25 30"
+			}
+			"04"
+			{		
+				"var_type"						"FIELD_FLOAT"
+				"debuff_duration"				"6"
 			}
 		}
 	}
